@@ -1,0 +1,15 @@
+---
+const { elements } = Astro.props;
+---
+
+<div class="border w-1/4">
+    {elements.map((e: any) => <div class="titles">{e.name}</div>)}
+</div>
+<script>
+    function $(el) {
+        return document.querySelector(el);
+    }
+    function mouseDown() {}
+    const titles = $(".titles");
+    titles.addEventListner("drag", (e) => {});
+</script>

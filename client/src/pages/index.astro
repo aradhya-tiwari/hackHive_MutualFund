@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Tile from "../components/Tile.astro";
+
+const tile1 = [
+    {
+        title: "Go to Market",
+        category: "todo",
+    },
+    {
+        title: "Code",
+        category: "todo",
+    },
+    {
+        title: "Trade",
+        category: "todo",
+    },
+    {
+        title: "Find Business Opportunity",
+        category: "todo",
+    },
+];
+---
+
+<Layout title="Welcome to Astro.">
+    <Tile elements={[{ name: "yo Bro", class: "3rd year" }]} />
+</Layout>

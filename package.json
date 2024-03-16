@@ -1,0 +1,18 @@
+{
+  "name": "kanbann-board",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:server": "pnpm -F server run dev",
+    "dev:client": "pnpm -F client run dev",
+    "dev:demo": "pnpm -F demo tsx --watch index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.28"
+  }
+}
