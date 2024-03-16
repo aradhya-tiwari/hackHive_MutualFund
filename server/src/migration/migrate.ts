@@ -24,9 +24,9 @@ export async function up(db: Kysely<any>) {
         .addColumn('returns_1yr', 'real', (col) => col.notNull())
         .addColumn('returns_3yr', 'real', (col) => col.notNull())
         .addColumn('returns_5yr', 'real', (col) => col.notNull())
-        .addColumn('weight_1', 'real', (col) => col.notNull())
-        .addColumn('weight_2', 'real', (col) => col.notNull())
-        .addColumn('weight_3', 'real', (col) => col.notNull())
+        .addColumn('Weighted_Returns', 'real')
+        .addColumn('weight_2', 'real')
+        .addColumn('weight_3', 'real')
         .execute()
 }
 up(db)
