@@ -8,7 +8,8 @@
     "better-sqlite3": "^9.4.3",
     "cheerio": "1.0.0-rc.12",
     "hono": "^4.0.9",
-    "kysely": "^0.27.3"
+    "kysely": "^0.27.3",
+    "kysely-codegen": "^0.13.1"
   },
   "devDependencies": {
     "@types/node": "^20.11.17",

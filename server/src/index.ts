@@ -4,7 +4,7 @@ import { Hono } from 'hono'
 const app = new Hono()
 
 app.get('/anime', (c) => {
-  fetchDB()
+
   return c.text('Hello Animesh!!!')
 })
 
