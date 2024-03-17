@@ -1,0 +1,17 @@
+---
+import Main from "../components/Main.astro";
+import Sidebar from "../components/Sidebar.astro";
+import Layout from "../layouts/Layout.astro";
+
+import LowRisk from "../components/LowRisk.astro";
+---
+
+<Layout title="Check High Alpha Stock">
+    <h1 class="text-2xl text-green-300">Low Risk Funds</h1>
+    <div class="flex justify-between items-center">
+        <div class="w-auto z-10">
+            <Sidebar />
+        </div>
+        <div class="w-[76%] h-screen z-30"><LowRisk /></div>
+    </div>
+</Layout>
