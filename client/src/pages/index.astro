@@ -21,8 +21,10 @@ const tile1 = [
         category: "todo",
     },
 ];
+let data = "Loading...";
 ---
 
+<p id="show"></p>{data}
 <Layout title="Welcome to Astro.">
-    <Tile elements={[{ name: "yo Bro", class: "3rd year" }]} />
+    <Tile elements={[{ name: "yo Bro", class: "3rd year" }]} client:load />
 </Layout>

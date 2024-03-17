@@ -3,9 +3,9 @@ import { Hono } from 'hono'
 
 const app = new Hono()
 
-app.get('/anime', (c) => {
+app.get('/', (c) => {
 
-  return c.text('Hello Animesh!!!')
+  return c.text('Hello Hello!!!')
 })
 
 app.get('/getTodos', async (c) => {

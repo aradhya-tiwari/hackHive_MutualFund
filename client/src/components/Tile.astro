@@ -1,9 +1,17 @@
 ---
 const { elements } = Astro.props;
+let data = "Loading";
+async function getData() {
+    let a = await fetch("http://localhost:3000/");
+    let b = await a.text();
+    // document.querySelector("#show").innerText = data;
+    return (data = b);
+}
+await getData();
 ---
 
 <div class="border w-1/4">
-    {elements.map((e: any) => <div class="titles">{e.name}</div>)}
+    {elements.map((e: any) => <div class="titles">{e.name}</div>)}{data}
 </div>
 <script>
     function $(el) {
