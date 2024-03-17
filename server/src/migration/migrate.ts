@@ -34,5 +34,15 @@ export async function up(db: Kysely<any>) {
         .addColumn('sharpe_rank', 'real')
         .addColumn('expense_rank', 'real')
         .execute()
+
 }
-up(db)
+
+async function altern() {
+
+    await db.schema.alterTable('mf').renameColumn('1yr_return_rank', 'rank_1yr').execute()
+    await db.schema.alterTable('mf').renameColumn('3yr_return_rank', 'rank_3yr').execute()
+    await db.schema.alterTable('mf').renameColumn('5yr_return_rank', 'rank_5yr').execute()
+}
+altern()
+// up(db)
+

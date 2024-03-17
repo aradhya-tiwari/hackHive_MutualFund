@@ -1,0 +1,16 @@
+---
+import Main from "../components/Main.astro";
+import Sidebar from "../components/Sidebar.astro";
+import Layout from "../layouts/Layout.astro";
+
+import AlphaTable from "../components/AlphaTable.astro";
+---
+
+<Layout title="Check High Alpha Stock">
+    <div class="flex justify-between items-center">
+        <div class="w-auto z-10">
+            <Sidebar />
+        </div>
+        <div class="w-[76%] h-screen z-30"><AlphaTable /></div>
+    </div>
+</Layout>

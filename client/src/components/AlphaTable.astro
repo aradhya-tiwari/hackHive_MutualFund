@@ -1,0 +1,98 @@
+---
+async function getData() {
+    let a = await fetch("http://localhost:3000/alpha?term=medium");
+    let b = await a.json();
+    // document.querySelector("#show").innerText = data;
+    return b;
+}
+let amt = 1;
+let data: Array<any> = await getData();
+console.log(data);
+---
+
+<script>
+    document.documentElement.classList.add("dark");
+</script>
+
+<div class="relative overflow-x-auto">
+    <table
+        class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+    >
+        <thead
+            class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+        >
+            <tr>
+                <th scope="col" class="px-6 py-3"> Scheme Name</th>
+                <th scope="col" class="px-6 py-3"> SIP</th>
+                <th scope="col" class="px-6 py-3"> Lumpsump</th>
+                <th scope="col" class="px-6 py-3"> Expense Ratio</th>
+                <th scope="col" class="px-6 py-3"> Fund Size</th>
+                <th scope="col" class="px-6 py-3"> Fund Age</th>
+
+                <th scope="col" class="px-6 py-3"> Fund Manager</th>
+                <th scope="col" class="px-6 py-3"> Category</th>
+                <th scope="col" class="px-6 py-3"> Sub Category</th>
+                <th scope="col" class="px-6 py-3"> Given Risk Level</th>
+                <th scope="col" class="px-6 py-3"> Given Rating</th>
+                <th scope="col" class="px-6 py-3"> Amount After a Year</th>
+                <th scope="col" class="px-6 py-3"> Amount After 5 year</th>
+                <th scope="col" class="px-6 py-3"> Amount After 3 Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                {
+                    data.map((mf: any) => (
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                {mf.scheme_name}
+                            </th>
+                            <td scope="col" class="px-6 py-3">
+                                {mf.min_sip}
+                            </td>
+                            <td scope="col" class="px-6 py-3">
+                                {mf.min_lumpsum}
+                            </td>
+                            <td scope="col" class="px-6 py-3">
+                                {mf.expense_ratio}
+                            </td>
+                            <td scope="col" class="px-6 py-3">
+                                {mf.fund_size_cr}
+                            </td>
+                            <td scope="col" class="px-6 py-3">
+                                {mf.fund_age_yr}
+                            </td>
+                            <td scope="col" class="px-6 py-3">
+                                {mf.fund_manager}
+                            </td>
+                            <td scope="col" class="px-6 py-3">
+                                {mf.category}
+                            </td>
+                            <td scope="col" class="px-6 py-3">
+                                {mf.sub_category}
+                            </td>
+                            <td scope="col" class="px-6 py-3">
+                                {mf.risk_level}
+                            </td>
+                            <td scope="col" class="px-6 py-3">
+                                {mf.rating}
+                            </td>
+                            <td scope="col" class="px-6 py-3">
+                                {mf.returns_1yr}%
+                            </td>
+                            <td scope="col" class="px-6 py-3">
+                                {mf.returns_3yr}%
+                            </td>
+                            <td
+                                scope="col"
+                                class={`px-6 py-3  bg-[rgb(${mf.returns_1yr},20,20)]`}
+                            >
+                                {mf.returns_5yr}%
+                            </td>
+                        </tr>
+                    ))
+                }
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,133 @@
+<script>
+    document.documentElement.classList.add("dark");
+</script>
+<button
+    data-drawer-target="default-sidebar"
+    data-drawer-toggle="default-sidebar"
+    aria-controls="default-sidebar"
+    type="button"
+    class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+>
+    <span class="sr-only">Open sidebar</span>
+    <svg
+        class="w-6 h-6"
+        aria-hidden="true"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            clip-rule="evenodd"
+            fill-rule="evenodd"
+            d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
+        ></path>
+    </svg>
+</button>
+
+<aside
+    id="default-sidebar"
+    class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+    aria-label="Sidebar"
+>
+    <div class="h-full px-3 py-4 overflow-y-auto bg-gray-800 dark:bg-gray-800">
+        <ul class="space-y-2 font-medium">
+            <div class="logo">
+                <a href="/">
+                    <img
+                        src="/favicon.svg"
+                        alt="Company Logo"
+                        width="100"
+                        height="50"
+                    />
+                </a>
+            </div>
+            <li>
+                <a
+                    href="/alpha"
+                    class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                >
+                    <svg
+                        class="flex-shrink-0 w-5 h-5 text-white transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                    >
+                        <!-- <rect width="24" height="24" fill="none" /> -->
+                        <path
+                            fill="currentColor"
+                            d="M17.66 11.2c-.23-.3-.51-.56-.77-.82c-.67-.6-1.43-1.03-2.07-1.66C13.33 7.26 13 4.85 13.95 3c-.95.23-1.78.75-2.49 1.32c-2.59 2.08-3.61 5.75-2.39 8.9c.04.1.08.2.08.33c0 .22-.15.42-.35.5c-.23.1-.47.04-.66-.12a.58.58 0 0 1-.14-.17c-1.13-1.43-1.31-3.48-.55-5.12C5.78 10 4.87 12.3 5 14.47c.06.5.12 1 .29 1.5c.14.6.41 1.2.71 1.73c1.08 1.73 2.95 2.97 4.96 3.22c2.14.27 4.43-.12 6.07-1.6c1.83-1.66 2.47-4.32 1.53-6.6l-.13-.26c-.21-.46-.77-1.26-.77-1.26m-3.16 6.3c-.28.24-.74.5-1.1.6c-1.12.4-2.24-.16-2.9-.82c1.19-.28 1.9-1.16 2.11-2.05c.17-.8-.15-1.46-.28-2.23c-.12-.74-.1-1.37.17-2.06c.19.38.39.76.63 1.06c.77 1 1.98 1.44 2.24 2.8c.04.14.06.28.06.43c.03.82-.33 1.72-.93 2.27"
+                        ></path>
+                    </svg>
+                    <span class="ms-3">Hot Funds</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#"
+                    class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                >
+                    <svg
+                        class="flex-shrink-0 w-5 h-5 text-white transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                    >
+                        <!-- <rect width="512" height="512" fill="none" /> -->
+                        <path
+                            fill="currentColor"
+                            d="M464 428L339.92 303.9a160.48 160.48 0 0 0 30.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0 0 94.58-30.72L428 464ZM209.32 319.69a110.38 110.38 0 1 1 110.37-110.37a110.5 110.5 0 0 1-110.37 110.37"
+                        ></path>
+                    </svg>
+                    <span class="flex-1 ms-3 whitespace-nowrap"
+                        >Find Your Fund</span
+                    >
+                    <!-- <span class="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">3</span> -->
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#"
+                    class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                >
+                    <svg
+                        class="flex-shrink-0 w-5 h-5 text-white transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 2048 2048"
+                    >
+                        <!-- <rect width="2048" height="2048" fill="none" /> -->
+                        <path
+                            fill="currentColor"
+                            d="m1603 256l214 640h103v128h-22q-20 57-56 104t-84 81t-104 52t-118 19q-61 0-117-18t-104-52t-84-81t-57-105h-22V896h103l214-640h-445v1410q167 11 316 75t273 179h179v128H128v-128h179q123-114 272-178t317-76V256H451l214 640h103v128h-22q-20 57-56 104t-84 81t-104 52t-118 19q-61 0-117-18t-104-52t-84-81t-57-105H0V896h103l214-640H0V128h896V0h128v128h896v128zM384 458L238 896h292zm0 694q69 0 128-34t94-94H162q35 60 94 94t128 34m1020 768q-100-63-213-95t-231-33q-118 0-231 32t-213 96zm132-1462l-146 438h292zm0 694q69 0 128-34t94-94h-444q35 60 94 94t128 34"
+                        ></path>
+                    </svg>
+                    <span class="flex-1 ms-3 whitespace-nowrap"
+                        >Compare Funds</span
+                    >
+                    <!-- <span class="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">Pro</span> -->
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#"
+                    class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                >
+                    <svg
+                        class="flex-shrink-0 w-5 h-5 text-white transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                    >
+                        <!-- <rect width="24" height="24" fill="none" /> -->
+                        <path
+                            fill="currentColor"
+                            d="M11 17h2v-6h-2zm1-8q.425 0 .713-.288T13 8q0-.425-.288-.712T12 7q-.425 0-.712.288T11 8q0 .425.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20m0-8"
+                        ></path>
+                    </svg>
+                    <span class="flex-1 ms-3 whitespace-nowrap">About Us</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</aside>
